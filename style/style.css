@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #201d18;
+}
+
+/*Image des réseaux social*/
+.reseau-social {
+  max-width: 45px;
+}
+.reseau {
+  z-index: 10;
+}
+
+.logo {
+  position: relative;
+  top: -30px;
+  left: 10px;
+  max-width: 250px;
+  z-index: 10;
+}
+
+/********************LIENS *****************/
+.nav-list {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.list {
+  text-align: center;
+  list-style-type: none;
+  line-height: 50px;
+
+  width: 300px;
+}
+.list-link {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+.list-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms ease-in-out;
+}
+.list-link:hover::after {
+  width: 100%;
+}
+/*Stylisation du menu*/
+.nav-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.navigation {
+  margin-top: 2em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.menu {
+  position: absolute;
+  top: -4000px;
+  width: 100vw;
+  height: 350vh;
+  background: #201d18;
+  transition: 300ms ease-in-out;
+}
+
+.txt-menu {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.closeBtn {
+  margin-top: 2em;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.menu-content {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 500px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 0.5em;
+  width: 340px;
+  height: 40px;
+  padding-left: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+#buttonSub {
+  margin-top: 1em;
+  padding: 1em;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+
+#buttonSub:hover {
+  background: white;
+  color: black;
+}
+
+#last-input {
+  height: 100px;
+}
+.menu-txt {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+.main-title {
+  position: absolute;
+  left: 50%;
+  top: 450px;
+  transform: translate(-50%, -50%);
+  font-size: 3.2em;
+  color: white;
+  text-align: center;
+  font-family: "Playball", sans-serif;
+}
+
+.main-section {
+  z-index: -10;
+  position: relative;
+  top: 700px;
+
+  width: 100vw;
+  background: #201d18;
+}
+
+.card-container {
+  width: 320px;
+  padding-bottom: 1em;
+  background: white;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.titre-repas {
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 0.2em;
+}
+
+.titre-repas::after {
+  content: "";
+  width: 160px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jouet {
+  font-size: 2em;
+  font-weight: 300;
+  margin-top: 0.2em;
+}
+
+.repas {
+  text-align: start;
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+.card-container-2 {
+  top: 0;
+}
+
+.dd {
+  margin-top: 3em;
+}
+/*Stylisation du header*/
+.video {
+  position: fixed;
+  top: 0;
+  right: -550px;
+  z-index: -10;
+  height: 100vh;
+}
+.appear {
+  top: 0;
+}
+
+/*Concept stylisation txt etc*/
+
+.concept {
+  margin-top: 2em;
+  text-align: center;
+  color: white;
+  padding: 1.3em;
+}
+.concept-txt {
+  font-size: 20px;
+}
+
+.concept-title {
+  font-size: 2em;
+  color: white;
+}
+
+.trait2 {
+  width: 275px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: 1em auto;
+}
+
+.main-footer {
+  width: 100vw;
+  background: white;
+
+  display: grid;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+caption {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+th,
+td {
+  padding: 1em;
+}
+th {
+  background: grey;
+}
+td {
+  background: white;
+}
+.logo-footer {
+  width: 110px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tableau {
+  width: 360px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 5em;
+}
+
+label {
+  margin-top: 1em;
+  color: white;
+  font-size: 1.5em;
+}
+/*Animation*/
+
+.logo-footer {
+  animation: rotateY 3s infinite linear;
+}
+@keyframes rotateY {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (min-width: 800px) {
+  .video {
+    width: 100vw;
+    object-fit: cover;
+    right: 0;
+  }
+
+  .list {
+    text-align: left;
+    width: 100%;
+  }
+  .nav-list {
+    top: 620px;
+    left: 20%;
+  }
+  .list-link {
+    font-size: 4em;
+    line-height: 1.5em;
+  }
+  .menu-content {
+    top: 270px;
+    align-items: flex-end;
+    right: 10%;
+  }
+  .menu {
+    height: 210vh;
+  }
+  .menu-txt {
+    font-size: 2.5em;
+  }
+  .trait {
+    position: absolute;
+    left: 59%;
+    width: 3px;
+    top: 20px;
+    border-radius: 50px;
+    height: 700px;
+    background: white;
+  }
+  ::placeholder {
+    font-size: 1.5em;
+  }
+  input {
+    width: 520px;
+    height: 60px;
+  }
+
+  .main-title {
+    font-size: 7rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    margin: 0;
+  }
+  .card-container {
+    top: -50px;
+    width: 475px;
+    height: 510px;
+  }
+
+  .titre-repas {
+    font-size: 2rem;
+  }
+
+  .jouet {
+    font-size: 3rem;
+  }
+  .repas {
+    font-size: 1.7em;
+  }
+
+  .concept-title {
+    font-size: 3rem;
+  }
+
+  .concept-txt {
+    margin-top: 1em;
+    padding: 0 7em;
+    font-size: 42px;
+  }
+  .navigation {
+    padding: 0 5em;
+  }
+  .tableau {
+    width: 450px;
+  }
+}

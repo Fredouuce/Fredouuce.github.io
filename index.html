@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <meta
+      name="description"
+      content="Notre restaurant vous offre les meilleurs repas a la flamme de La Réunion , nous y ajoutons une offre spécial , une offre qu'uniquement ceux qui aime jouer avec le feux pourrons lever le défis"
+    />
+    <title>La flamme</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="navigation">
+        <div class="nav-menu">
+          <img src="./src/img/Groupe-1.png" alt="Hamburger menu" />
+          <p class="txt-menu">Menu</p>
+        </div>
+
+        <img src="./src/img/logo-final.png" alt="Logo La flamme" class="logo" />
+
+        <div class="reseau">
+          <a href="">
+            <img
+              src="./src/img/logo-facebookB.png"
+              alt="Lien facebook"
+              class="reseau-social"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./src/img/twitterb.png"
+              alt="Lien twitter"
+              class="reseau-social"
+          /></a>
+        </div>
+      </div>
+      <h1 class="main-title">Vos plats favoris préparez a la flamme</h1>
+
+      <div class="menu">
+        <div class="closeBtn">
+          <img src="./src/img/close.png" alt="Boutton fermeture" />
+        </div>
+        <nav class="nav-list">
+          <ul class="list">
+            <li><a href="#" class="list-link">Accueil</a></li>
+            <li><a href="#" class="list-link">Pass sanitaire</a></li>
+            <li><a href="#" class="list-link">Réservation</a></li>
+            <li><a href="#" class="list-link">FAQ</a></li>
+            <li><a href="#" class="list-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-content">
+          <div class="trait"></div>
+          <p class="menu-txt">
+            Pour toute demande <br />
+            Veuillez nous contactez
+          </p>
+
+          <form action="POST">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" />
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" />
+
+            <label for="num-tel">Numéros de Téléphone</label>
+            <input type="text" id="num-tel" name="numtel" />
+
+            <label for="last-input">Votre message</label>
+            <input type="text" id="last-input" name="message" />
+
+            <button type="submit" id="buttonSub" name="Envoyez votre message">
+              Envoyez votre message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <video autoplay loop muted class="video">
+        <source
+          src="./src/img/pexels-grisha-grishkoff-5964051.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </header>
+    <section class="main-section">
+      <div class="card">
+        <div class="card-container">
+          <h2 class="titre-repas">01-Formule Enfant</h2>
+          <p class="jouet">Jouet du moment</p>
+
+          <p class="repas">-Repas</p>
+          <p class="repas">-Dessert</p>
+          <p class="repas">-Boisson sucré ou non</p>
+        </div>
+
+        <div class="card-container card-container-2">
+          <h2 class="titre-repas">02-Formule Adulte</h2>
+          <p class="jouet">Alcool gratuit entre 18h & 19h</p>
+
+          <p class="repas">-Repas</p>
+          <p class="repas">-Dessert</p>
+          <p class="repas">-Boisson sucré ou non</p>
+        </div>
+
+        <div class="card-container card-container-2 dd">
+          <h2 class="titre-repas">03-Formule Adolescent</h2>
+          <p class="jouet">Wifi & jeux vidéos à disposition</p>
+
+          <p class="repas">-Repas</p>
+          <p class="repas">-Dessert</p>
+          <p class="repas">-Boisson sucré ou non</p>
+        </div>
+      </div>
+
+      <div class="concept">
+        <h3 class="concept-title">Notre concept</h3>
+        <p class="concept-txt">
+          Le concept de notre restaurant est de vous cuisinez des repas a la
+          flamme mais pas que. vous commandez les formules qui vous intéresse et
+          notre équipe se chargent de vous confectionnez les plats , vous
+          n'aurez aucune informations sur ce que vous allez manger ni le prix ,
+          car ici seul ceux qui n'ont pas peur de jouer avec le feu ont leurs
+          place.
+        </p>
+        <div class="trait2"></div>
+        <p class="concept-txt">
+          Veuillez nous contactez par notre service d'emailing ou Appelez nous
+          au : 0692 00 00 00
+        </p>
+      </div>
+
+      <div class="tableau">
+        <table>
+          <caption>
+            Tableau des prix & formule
+          </caption>
+          <tr>
+            <th scope="col">Formule</th>
+            <th scope="col">Age</th>
+            <th scope="col">Prix</th>
+          </tr>
+
+          <tr>
+            <th scope="row">Enfant</th>
+            <td>1 ans à 12 ans</td>
+            <td>Entre 15€ & 30€</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Adolescent</th>
+            <td>12 ans & 18 ans</td>
+            <td>Entre 20 & 50€</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Adulte</th>
+            <td>18 ans et plus</td>
+            <td>Entre 25€ et 90€</td>
+          </tr>
+        </table>
+      </div>
+
+      <footer class="main-footer">
+        <img
+          src="./src/img/logo_final_noir.png"
+          alt="logo"
+          class="logo-footer"
+        />
+        <p>Tous droits réservé a fredouce Frérot</p>
+      </footer>
+    </section>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
